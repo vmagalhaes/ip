@@ -48,6 +48,7 @@
  * @return undefined
  */
 function getUserIP(onNewIP) { //  onNewIp - your listener function for new IPs
+	console.log(onNewIp)
     //compatibility for firefox and chrome
     var myPeerConnection = window.RTCPeerConnection || window.mozRTCPeerConnection || window.webkitRTCPeerConnection;
     var pc = new myPeerConnection({
